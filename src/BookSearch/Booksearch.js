@@ -26,6 +26,8 @@ function Booksearch() {
   }, [value, offset]);
 
   function handleChange() {
+    setEnd(0);
+    setOffset(0);
     const imp = document.querySelector("#imp").value;
     let text = imp.replace(/\s+/g, "+");
     setValue(text);
