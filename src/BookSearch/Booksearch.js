@@ -93,7 +93,7 @@ function Booksearch() {
             </button>
             <button
               className="next"
-              disabled={endValue==0 || offset > endValue}
+              disabled={endValue-10<0 || offset > endValue}
               onClick={() => setOffset(offset + limit)}
             >
               Next
