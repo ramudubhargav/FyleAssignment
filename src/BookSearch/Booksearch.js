@@ -52,7 +52,7 @@ function Booksearch() {
       <hr />
       {value && (
         <h2 className="search-header">
-          <span>{value}</span>
+          <span>{value.replace("+"," ")}</span>
         </h2>
       )}
       {isLoading ? (
