@@ -1,0 +1,67 @@
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+th {
+  background-color: #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.separator {
+  margin: 20px 0;
+  border-top: 1px solid #ccc;
+}
+.loader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-string {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.pagination button:hover {
+  background-color: #3e8e41;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: default;
+}

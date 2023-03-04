@@ -1,0 +1,65 @@
+
+.box {
+  margin-top: 20px;
+}
+.toolbar{
+  padding-top: 10px;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+table {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 10px;
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #269ca0;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+p:hover {
+  cursor: pointer;
+}
+tr:hover {
+  background-color: #ddd;
+}
+
+.message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff0000;
+}
+.ant-input {
+  margin-left: 2%;
+  margin-right: 20px;
+  width: 50%;
+}
+
+.ant-btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}

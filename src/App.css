@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  height: 100%;
+}
+
+.App > div:nth-child(1) {
+  flex: 1 1 100%;
+  background-color: #f2f2f2;
+}
+
+.App > div:nth-child(2) {
+  flex: 1 1 80%;
+  background-color: #fff;
+  padding: 10px;
+}
