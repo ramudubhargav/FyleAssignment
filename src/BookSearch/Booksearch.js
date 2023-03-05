@@ -40,14 +40,17 @@ function Booksearch() {
       </div>
     );
   }
-
+  function handleclear(){
+    setValue("");
+  }
   return (
     <div className="book-search">
       <div className="input-container">
         <Input type="text" id="imp" placeholder="Search Books" />
-        <Button onClick={handleChange}>
+        <Button onClick={handleChange} style={{marginRight : "10px"}}>
           Search
         </Button>
+        <Button disabled={value.length==0} onClick={handleclear}>Clear</Button>
       </div>
       <hr />
       {value && (
