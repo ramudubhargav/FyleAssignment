@@ -77,7 +77,7 @@ function Booksearch() {
                     <td>{dat.title}</td>
                     <td>{dat.author_name}</td>
                     <td>{dat.first_publish_year}</td>
-                    <td>{Math.max(...dat.publish_year)}</td>
+                    <td>{dat.publish_year ? Math.max(...dat.publish_year) : "Unknown"}</td>
                   </tr>
                 ))}
               </tbody>
@@ -95,7 +95,7 @@ function Booksearch() {
             </button>
             <button
               className="next"
-              disabled={endValue-10<0 || offset > endValue}
+              disabled={endValue-10<0 || endValue-offset <10|| offset > endValue}
               onClick={() => setOffset(offset + limit)}
             >
               Next
