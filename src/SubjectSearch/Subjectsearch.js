@@ -35,7 +35,7 @@ function Subjectsearch() {
       <div className="input-button-container">
         <Input  id="val"  className="subsearch-input" placeholder="Search by Subject" />
         <Button onClick={handlebutton} className="subsearch-btn" type="primary" style={{marginRight: '10px'}}>Search</Button>
-        <Button disabled={search.length==0} onClick={handleclick} className="subsearch-btn" type="primary">Back</Button>
+        <Button disabled={search.length==0} onClick={handleclick} className="subsearch-btn" type="primary">Clear</Button>
         <hr />
       </div>
       {search.length == 0 ? <Display /> : <Subsearch inp={search} />}
